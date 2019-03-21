@@ -30,8 +30,22 @@
 <img id="title_" class="pic_a" style="vertical-align:middle;width:80px;height:80px;border-radius:50%;" src="Infinitilia.png"/>
 <span id="title_" class="text_b" style="vertical-align:middle;font-size:40px;">Infinitilia</span>
 <hr/>
-<input id="bds" type="text" size="80" maxlength="250" class="text_a" style="font-family:等线;"/>
-<button id="bd" class="button_a" style="padding:10px 10px;font-size:20px;" onclick="function(){window.open('https://www.baidu.com/baidu?wd='+document.getElementById('bds').value);}();">百度一下</button>
+<script>
+function baidu(){window.open("https://www.baidu.com/baidu?wd="+document.getElementById("bds").value);}
+function luogu(){window.open("https://www.luogu.org/problemnew/lists?name="+document.getElementById("lgs").value);}
+function wyyyy(){window.open("https://music.163.com/#/search/m/?s="+document.getElementById("wms").value);}
+</script>
+<input id="bds" type="text" size="80" maxlength="250" class="text_b"/>
+<button type="button" id="bd" class="button_a" style="padding:10px 10px;font-size:20px;" onclick="baidu()">百度一下</button>
 <button type="reset" id="bds" class="button_a" style="padding:10px 10px;font-size:20px;">Clear</button>
+	<br/>
+<input id="lgs" type="text" size="80" maxlength="250" class="text_b"/>
+<button type="button" id="lg" class="button_a" style="padding:10px 10px;font-size:20px;" onclick="luogu()">luogu搜题</button>
+<button type="reset" id="lgs" class="button_a" style="padding:10px 10px;font-size:20px;">Clear</button>
+	<br/>
+<input id="wms" type="text" size="80" maxlength="250" class="text_b"/>
+<button type="button" id="wm" class="button_a" style="padding:10px 10px;font-size:20px;" onclick="wyyyy()">163-Music</button>
+<button type="reset" id="wms" class="button_a" style="padding:10px 10px;font-size:20px;">Clear</button>
+	<br/>
 </body>
 </html>
