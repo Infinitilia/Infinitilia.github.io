@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-hans-cn">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Infinitilia</title>
+    <link rel="stylesheet" href="css/css.css"/>
+    <link rel="shortcut icon" href="Infinitilia.png"/>
+</head>
+<body>
+<div>
+    <svg width="0" height="0">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
+            </filter>
+        </defs>
+    </svg>
+    <div class="aside-nav bounceInUp animated" id="aside-nav">
+        <label for="" class="aside-menu">Menu</label>
+			<a href="https://Infinitilia.github.io/" class="menu-item menu-first">Home</a>
+			<a href="#" class="menu-item menu-second">Funcs</a>
+			<a href="OI" class="menu-item menu-third">OI</a>
+			<a href="OJ" class="menu-item menu-fourth">OJ</a>
+    </div>
+</div>
+<script src="js/js_dhl.js"></script>
+<script src="js/dhl.js"></script>
+<img id="title_" class="pic_a" style="vertical-align:middle;width:80px;height:80px;border-radius:50%;" src="Infinitilia.png"/>
+<span id="title_" class="text_b" style="vertical-align:middle;font-size:40px;">Infinitilia</span>
+<hr/>
+<input id="bds" type="text" size="80" maxlength="250" class="text_a" style="font-family:等线;"/>
+<button id="bd" class="button_a" style="padding:10px 10px;font-size:20px;" onclick="function(){window.open("https://www.baidu.com/baidu?wd="+document.getElementById("bds").value);}">百度一下</button>
+<button type="reset" id="bds" class="button_a" style="padding:10px 10px;font-size:20px;">Clear</button>
+</body>
+</html>
