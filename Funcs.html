@@ -32,19 +32,19 @@
 <hr/>
 <script>
 function baidu() {
-	if(/^ *$/.test(str))
+	if(!/^ *$/.test(document.getElementById("bds").value))
 	window.open("https://www.baidu.com/baidu?wd="+document.getElementById("bds").value+"&ie=utf-8");
 		document.getElementById("bds").value="";}
 function luogu() {
-	if(/^ *$/.test(str))
+	if(!/^ *$/.test(document.getElementById("lgs").value))
 	window.open("https://www.luogu.org/problemnew/lists?name="+document.getElementById("lgs").value);
 		document.getElementById("lgs").value="";}
 function wyyyy() {
-	if(/^ *$/.test(str))
+	if(!/^ *$/.test(document.getElementById("wms").value))
 	window.open("https://music.163.com/#/search/m/?s="+document.getElementById("wms").value);
 		document.getElementById("wms").value="";}
 function jscbs() {
-	if(/^ *$/.test(str))
+	if(!/^ *$/.test(document.getElementById("cbs").value))
 	window.open("http://www.iciba.com/"+document.getElementById("cbs").value);
 		document.getElementById("cbs").value="";}
 </script>
